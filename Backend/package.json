@@ -7,7 +7,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "server.js"
+    "dev": "nodemon StirBackend.js",
+    "start": "node StirBackend.js"
   },
   "dependencies": {
     "dotenv": "^17.3.1",
