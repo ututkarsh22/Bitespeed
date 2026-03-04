@@ -6,8 +6,11 @@ import OpenAI from "openai";
 dotenv.config();
 
 const app = express();
-
-app.use(cors());
+const port = process.env.PORT;
+app.use(cors({
+  origin : "https://ai-sentiment-to-movie.vercel.app/",
+  credentials : true,
+}));
 app.use(express.json());
 
 const client = new OpenAI({
@@ -47,6 +50,6 @@ app.post("/sentiment", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("Backend running on http://localhost:5000");
+app.listen(port, () => {
+  console.log(`Backend running on http://localhost:${port}`);
 });

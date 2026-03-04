@@ -18,7 +18,7 @@ function App() {
   };
 
   const analyzeSentiment = async (plot) => {
-    const res = await fetch("http://localhost:5000/sentiment", {
+    const res = await fetch("https://bitespeed-hqpv.onrender.com/sentiment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
