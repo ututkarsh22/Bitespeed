@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+
+.container {
+  max-width: 400vw;
+  
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search-box button:hover {
+  background: #16a34a;
+}
+
+
+.movie-card {
+  display: flex;
+  gap: 25px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.movie-card img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-info h2 {
+  margin-bottom: 10px;
+}
+
+.movie-info p {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+
+.plot {
+  margin-top: 10px;
+  color: #cbd5f5;
+}
+
+
+.sentiment-box {
+  margin-top: 15px;
+  padding: 12px;
+  background: #111827;
+  border-left: 4px solid #22c55e;
+  border-radius: 6px;
+}
